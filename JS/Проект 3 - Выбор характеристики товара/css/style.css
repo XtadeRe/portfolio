@@ -1,0 +1,82 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    box-sizing: border-box;
+    background: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    color: rgb(189, 184, 255);
+    border-radius: 24px;
+    background-color: rgb(49, 49, 49);
+    display: grid;
+    width: 1000px;
+    margin: 0 auto;
+    gap: 20px;
+    height: auto;
+    transform: translateY(25%);
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "photo text text";
+}
+
+.text {
+    grid-area: text;
+}
+
+.photo {
+    grid-area: photo;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+}
+.color1, .color2, .color3 {
+    padding: 10px;
+    border-style: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.color1:active, .color2:active, .color3:active {
+    filter: drop-shadow(0 0 5px rgb(230, 230, 230));
+    transition: 0.1s;
+}
+
+.color1 {
+    background-color: rgb(189, 184, 255);
+}
+
+.color2 {
+    background-color: rgb(255, 219, 229);
+}
+
+.color3 {
+    background-color: rgb(255, 237, 73);
+}
+
+#btn {
+    padding: 20px 55px;
+    border-style: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(189, 184, 255);
+}
+
+#otz {
+    margin: 25px 0 0 0;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#otz:hover {
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
